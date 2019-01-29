@@ -1,0 +1,30 @@
+<?php include(`server.php`); ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frank trevel booking login plate</title>
+    <link rel="stylesheet" type="text/css" href="frank.css">
+</head>
+<body>
+<div class="header">
+    <h2>Frank Travel Booking login Plate</h2>
+</div>
+<form method="post" action="login.html">
+    <div class="input-group">
+        <label>Username</label>
+        <input type="text" name="username">
+    </div>
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" name="password1">
+    </div>
+    <div class="input-group">
+        <button type="submit" name="login" class="btn" onClick="parent.open('http://localhost:63342/franktravelbooking/registration/passengerspage.html?_ijt=d3j33jbi0uhut2jgijffnoe2ng')">Login</button>
+    </div>
+</form>
+</body>
+</html>

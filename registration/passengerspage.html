@@ -1,0 +1,274 @@
+<?php include(`server.php`);?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUS BOOKING</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="jayson.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+        .myLink {display: none}
+    </style>
+</head>
+<body>
+<body class="w3-light-grey">
+<STYLE>A {text-decoration: none;} </STYLE>
+
+<!-- Navigation Bar -->
+<div class="header">
+    <h2>WELCOME TO  CYTONN BUS AND CAR RENTAL BOOKING PLATE</h2>
+</div>
+<div class="w3-bar w3-Green w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-green w3-mobile"><i class="fa fa-bus and car w3-margin-right"></i>Cytonn Bus/Car Booking </a>
+    <a href="#about" class="w3-bar-item w3-button w3-yellow w3-mobile">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-green w3-mobile">Contact</a>
+
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+    <div class="w3-container w3-light-blue">
+        <h2><i class="fa fa-bus w3-margin-right"></i> Luxury Bus  Class</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+        <form method="post" action="passengerspage.html.">
+            <!--dsipaly validation error here -->
+            <?php include(`errors.php`); ?>
+            <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-half w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Departure</label>
+                    <input class="w3-input w3-border" type="text" placeholder="Departure" name="Departure" required>
+                </div>
+                <div class="w3-half">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Destination</label>
+                    <input class="w3-input w3-border" type="text" placeholder="Destination" name="Destination" required>
+                </div>
+            </div>
+            <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-half w3-margin-bottom">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <input class="w3-input w3-border" type="text" placeholder="First Name" name="First Name" required>
+                </div>
+                <div class="w3-half">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <input class="w3-input w3-border" type="text" placeholder="last Name" name="last Name" required>
+                </div>
+            </div>
+
+            <div class="w3-row-padding" style="margin:8px -16px;">
+                <div class="w3-half w3-margin-bottom">
+                    <label><i class="fa fa-male"></i> Passengers</label>
+                    <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="1" required>
+                </div>
+                <div class="w3-half">
+                    <label><i class="fa fa-luggage"></i>Luggage Weight</label>
+                    <input class="w3-input w3-border" type="number" value="0" name="Luggage Weight in kg" min="0" max="6" required>
+                </div>
+            </div>
+            <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-half w3-margin-bottom">
+                    <label><i class="fa fa-seat-o"></i> Seat Number</label>
+                    <input class="w3-input w3-border" type="number" value="0" name="Laguages" min="0" max="20" required>
+                </div>
+                <div class="w3-half">
+                    <label><i class="fa fa-money-o"></i> Bus Fare</label>
+                    <input class="w3-input w3-border" type="number" value="0" name="Laguages" min="0" max="5000" required>
+                </div>
+            </div>
+            <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-half w3-margin-bottom">
+                    <label><i class="fa fa-phone"></i> Phone Number</label>
+                    <input class="w3-input w3-border" type="text" placeholder="phone number" name="phone number" required>
+                </div>
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-calendar-o"></i> Travel Date </label>
+                        <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="Travel Date" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="glyphicon glyphicon-thumbs-up"></i>
+                        <button type="submit" name="login" class="btn" onClick="parent.open('http://localhost:63342/franktravelbooking/registration/passengerspage.html?_ijt=d3j33jbi0uhut2jgijffnoe2ng')">Login</button>
+                    </div>
+                    <p><a href='http://localhost:63342/BUSBOOKING/passenger/bookingmessage.html?_ijt=dd8vr90g7sd3l3ls6njs8ib8aj'/a>
+                    </p>
+        </form>
+    </div>
+    </div>
+</header>
+</body>
+
+<!-- Explore Nature -->
+<div class="w3-container">
+    <h3>TEMBEA KENYA </h3>
+    <p>Travel with us and see nature at its finest IN OUR COMFORT RIDES.</p>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+        <img src="image/kisumu.jpeg">
+        <div class="w3-container w3-green">
+            <h3>Kisumu</h3>
+            <p class="w3-opacity">FARE $79</p>
+            <p>The Land of all types of fish</p>
+
+        </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+        <img class="img-responsive" src="image/nairobi%20(copy).jpeg">
+        <div class="w3-container w3-light-blue">
+            <h3>Nairobi</h3>
+            <p class="w3-opacity"> FARE $39</p>
+            <p>The Capital City of Kenya</p>
+
+        </div>
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+        <img class="img-responsive" src="image/mombasa.jpeg">
+        <div class="w3-container w3-light-blue">
+            <h3>Mombasa</h3>
+            <p class="w3-opacity">FARE $79</p>
+            <p>The Blue Ocean land </p>
+
+        </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+        <img class="img-responsive" src="image/nakuru.jpeg">
+        <div class="w3-container w3-green">
+            <h3>Nakuru</h3>
+            <p class="w3-opacity">FARE $39</p>
+            <p>Palace of Flamingo's</p>
+
+        </div>
+    </div>
+</div>
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+        <p>Cytonn Bus and car Booking  Ltd is a luxury coach company incorporated on 26th May 2007 operating within Kenya, Uganda, Tanzania and Rwanda. Modern Coast Coaches is one of the most recognised luxury bus companies operating in the region. The company has over 50 branches in Kenya ,5 branches in Uganda , 7 branches in Tanzania and one branch in Rwanda.
+            The main office is on Jomo Kenyatta Avenue in the Coast Total petrol station, next to Aswan restaurant.
+
+            The company started with a fleet of 6 brand new Scania buses and currently has a fleet of over 60 state of the art coaches. There are more than ten daily services of the air-conditioned buses from Mombasa and Nairobi with the rest being the non air-conditioned services.
+
+            Modern Coast Coaches is the only luxury coach company in East Africa to provide both first class and business class service on board. The first class seats are of much bigger dimensions compared to the business class seats.</p>
+        <p><strong>The C.E.O and The Co-Founder</strong> Mr. FRANK JAYSON  MULI</p>
+
+        <div class="w3-row-padding w3-padding-16">
+            <div class="w3-third w3-margin-bottom">
+                <img src="image/frank.jpg"style="width:100%">
+                <div class="w3-container w3-green">
+                    <p><strong>The C.E.O and The Co-Founder</strong> Mr. FRANK JAYSON  MULI</p>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="image/bus2.jpeg"style="width:100%">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="image/bus3.jpeg" style="width:100%">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="image/bus4.jpeg" style="width:100%">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-third w3-margin-bottom">
+                    <img src="image/bus7.jpeg" style="width:100%">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="image/dreamlinerbus.jpeg" style="width:100%">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <img src="image/bus9.jpeg"style="width:100%">
+                    <div class="w3-container w3-green">
+                        <p class="w3-large"><i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <h1><b>Opening Hours</b></h1>
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Monday 7.00 am - 12.00 pm</p>
+                    <p>Tuesday 7.00 am - 12.00 pm</p>
+                    <p>Wednesday 7.00 AM - 12.00 PM</p>
+                    <p>Thursday 7.OO AM - 12:00 PM</p>
+                </div>
+                <div class="w3-col s6">
+                    <p>Friday 7:00 AM - 12:00 PM</p>
+                    <p>Saturday 7:00 AM - 12:00 PM</p>
+                    <p>Public Days -  (FULLY OPENED)</p>
+                    <p>Sunday Closed</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="w3-container">
+        <div class="w3-panel w3-padding-16 w3-green w3-greenscale w3-xlarge">
+            <h2>WE ARE ALWAYS HERE FOR YOU.</h2>
+            <p>Your feedbak builds us more stronger.</p>
+        </div>
+    </div>
+    <div class="w3-container" id="contact">
+        <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions, do not hesitate to ask them.</p>
+            <p>Let us book your next trip!</p>
+            <i class="fa fa-map-marker" style="width:30px"></i> Nairobi-Kenya<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +254 714 301 877<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: frankjayson95@gmail.com<br>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-margin-bottom">
+        <div class="w3-panel w3-padding-16 w3-green w3-greenscale w3-xlarge">
+            <h5>Find Us On, Follow Us and Like Our Page</h5>
+            <div class="w3-xlarge w3-padding-16">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <p> THANK YOU FOR CHOOSING US AND MAKING US YOUR N0.1 CHOICE</p>
+    </footer>
+    <a href="#top">Back to top of page</a>
+
+</body>
+</html>
